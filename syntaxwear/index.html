@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SyntaxWear — E-commerce</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">SyntaxWear</h1>
+      <nav class="main-nav">
+        <a href="#">Produtos</a>
+        <a href="#">Destaques</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Nova coleção</h2>
+        <p>Estilo minimalista para desenvolvedores.</p>
+        <a class="btn" href="#products">Ver produtos</a>
+      </div>
+    </section>
+
+    <section id="highlights" class="highlights container">
+      <div class="highlight">Frete grátis</div>
+      <div class="highlight">Devolução em 30 dias</div>
+      <div class="highlight">Suporte 24/7</div>
+    </section>
+
+    <section id="products" class="products container">
+      <h3>Produtos</h3>
+      <div class="products-grid">
+        <article class="product-card">
+          <img src="assets/images/products/placeholder.jpg" alt="Produto">
+          <h4>Nome do Produto</h4>
+          <p class="price">R$ 99,00</p>
+          <a class="btn" href="#">Comprar</a>
+        </article>
+        <!-- Repita product-card conforme necessário -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SyntaxWear. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
