@@ -1,1 +1,3 @@
-/* main.css limpo */
+body {
+    font-family: var(--fonte-principal);
+}
